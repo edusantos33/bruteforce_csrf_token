@@ -61,6 +61,14 @@ python3 bruteforce_csrf_token.py \
   --output found.txt
 ```
 
+or
+
+```bash
+python3 bruteforce_csrf_token.py -u http://localhost:8088/login.php \    
+  -U /usr/share/wordlists/metasploit/http_default_users.txt \
+  -w /usr/share/wordlists/metasploit/http_default_pass.txt
+```
+
 If the login is successful, the script will show the result and optionally save it in `found.txt`.
 
 ---
